@@ -80,6 +80,9 @@ public class AccountService {
 		case "last_month":
 			transactionDetails = transactionRepo.getByRange(accountNumber, 30, type, paging);
 			break;
+		case "last_year":
+			transactionDetails = transactionRepo.getByRange(accountNumber, 365, type, paging);
+			break;
 		default:
 			transactionDetails = null;
 			break;
