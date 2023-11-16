@@ -59,10 +59,10 @@ public class AccountService {
 				throw  new Exception("Either provide range or provide from and to Date only");
 			}
 		}
-//		if((ObjectUtils.isEmpty(toDate)  && ObjectUtils.isEmpty(fromDate)) && ObjectUtils.isEmpty(range)  )
-//		{
-//			throw new Exception("Either provide range or provide from and to Date");
-//		}
+		if((ObjectUtils.isEmpty(toDate)  && ObjectUtils.isEmpty(fromDate)) && ObjectUtils.isEmpty(range)  )
+		{
+			throw new Exception("Either provide range or provide from and to Date");
+		}
 
 		return true;
 	}
